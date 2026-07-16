@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =======================================================
+         BASIC PAGE SETTINGS
+    ======================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="CyberFolio: Shinobi Edition - Professional Cyber Security Portfolio of Ejeh David Eniola.">
+
+    <meta
+        name="keywords"
+        content="Cyber Security, Portfolio, HTML, CSS, JavaScript, Networking">
+
+    <meta
+        name="author"
+        content="Ejeh David Eniola">
+
+    <title>
+        Ejeh David Eniola | CyberFolio • Shinobi Edition
+    </title>
+
+
+    <!-- =======================================================
+         GOOGLE FONTS
+    ======================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =======================================================
+         LUCIDE ICONS
+    ======================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- =======================================================
+         CSS FILES
+    ======================================================== -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/hero.css">
+
+    <link rel="stylesheet" href="css/sections.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/themes.css">
+    
+    <link rel="stylesheet" href="css/dashboard.css">
+    
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+
+<body>
+        <script src="js/main.js"></script>
+
+    <script src="js/particles.js"></script>
+
+    <script src="js/clan-rain.js"></script>
+
+    <script src="js/terminal.js"></script>
+
+    <script src="js/easter-eggs.js"></script>
+
+    <script src="js/dashboard.js"></script>
+
+    <script src="js/projects.js"></script>
+    
+    <script>
+
+        lucide.createIcons();
+
+    </script>
+
+<!--=========================================
+    SECURITY SANDBOX MODAL
+==========================================-->
+
+<div id="project-modal" class="project-modal">
+
+    <div class="project-modal-content">
+
+        <button
+            id="close-project-modal"
+            class="close-modal">
+
+            ✕
+
+        </button>
+
+        <div class="sandbox-header">
+
+            <i data-lucide="shield-check"></i>
+
+            <h2>
+
+                SECURITY SANDBOX
+
+            </h2>
+
+        </div>
+
+        <div class="sandbox-status">
+
+            <span class="status-dot"></span>
+
+            Secure Environment
+
+        </div>
+
+        <h3 id="modal-title">
+
+            Password Generator
+
+        </h3>
+
+        <p id="modal-description">
+
+            Description goes here.
+
+        </p>
+
+        <div class="sandbox-buttons">
+
+            <a
+                id="modal-demo"
+
+                class="btn-primary"
+
+                href="#">
+
+                Launch Demo
+
+            </a>
+
+            <a
+                id="modal-github"
+
+                href="#">
+
+                GitHub
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- =======================================================
+         BOOT SCREEN
+    ======================================================== -->
+
+    <div id="boot-screen">
+
+        <div class="boot-container">
+
+            <h1>SHINOBI CYBER SYSTEM</h1>
+
+            <p class="boot-line">
+                Initializing Secure Network...
+            </p>
+
+            <p class="boot-line">
+                Loading Security Modules...
+            </p>
+
+            <p class="boot-line">
+                Verifying Identity...
+            </p>
+
+            <p class="boot-line">
+                Access Granted...
+            </p>
+
+            <div class="boot-progress">
+
+                <div class="boot-progress-fill"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         SHINOBI SYMBOL RAIN
+    ======================================================== -->
+
+    <canvas id="clan-rain"></canvas>
+
+
+    <!-- =======================================================
+         MAIN WEBSITE
+    ======================================================== -->
+
+    <div id="app">
+        <!-- =======================================================
+             HEADER / NAVIGATION
+        ======================================================== -->
+
+        <header id="header">
+
+            <nav class="navbar container">
+
+                <!-- ==========================
+                     LOGO
+                =========================== -->
+
+                <a href="#hero" class="logo">
+
+                    <span class="logo-icon">
+                        ⚡
+                    </span>
+
+                    <span class="logo-text">
+
+                        EDE
+
+                    </span>
+
+                </a>
+
+
+                <!-- ==========================
+                     NAVIGATION LINKS
+                =========================== -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="#hero" class="active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#terminal">
+                            Cyber Lab
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- ==========================
+                     NAVIGATION ACTIONS
+                =========================== -->
+
+                <div class="nav-actions">
+
+                    <!-- Theme Toggle -->
+
+                    <button
+                        id="theme-toggle"
+                        class="icon-btn"
+                        aria-label="Toggle Theme">
+
+                        <i data-lucide="moon"></i>
+
+                    </button>
+
+
+                    <!-- Resume Button -->
+
+                    <a
+                        href="assets/resume/Ejeh-David-Eniola-Resume.pdf"
+                        class="resume-btn"
+                        download>
+
+                        Resume
+
+                    </a>
+
+
+                    <!-- Mobile Menu -->
+
+                    <button
+                        id="menu-btn"
+                        class="icon-btn"
+                        aria-label="Open Navigation">
+
+                        <i data-lucide="menu"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </header>
+          <!-- =======================================================
+             HERO SECTION
+        ======================================================== -->
+
+        <main>
+
+            <section id="hero" class="hero">
+
+                <div class="container hero-container">
+
+                    <!-- ==========================================
+                         HERO CONTENT
+                    =========================================== -->
+                       <div class="soc-dashboard fade-up">
+
+    <div class="dashboard-header">
+
+        <i data-lucide="shield-check"></i>
+
+        <span>SECURITY OPERATIONS CENTER</span>
+
+    </div>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-item">
+
+            <h3 id="projects-count">0</h3>
+
+            <span>Projects</span>
+
+        </div>
+
+        <div class="dashboard-item">
+
+            <h3 id="skills-count">0</h3>
+
+            <span>Skills</span>
+
+        </div>
+
+        <div class="dashboard-item">
+
+            <h3 id="cert-count">0</h3>
+
+            <span>Certificates</span>
+
+        </div>
+
+        <div class="dashboard-item">
+
+            <h3 id="status-text">
+
+                ONLINE
+
+            </h3>
+
+            <span>Status</span>
+
+        </div>
+
+    </div>
+
+</div>
+                    <div class="hero-content">
+
+                        <span class="hero-badge">
+
+                            Welcome, Shinobi.
+
+                        </span>
+
+                        <h1>
+
+                            Ejeh David Eniola
+
+                        </h1>
+
+                        <h2>
+
+                            <span class="typing-text"></span>
+
+                        </h2>
+
+                        <p class="hero-description">
+
+                            I am a Cyber Security student with an enthusiastic
+                            attitude toward learning. I enjoy solving problems,
+                            understanding how technology works, and continuously
+                            expanding my knowledge. Every challenge is another
+                            opportunity to learn, adapt, and grow.
+
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#projects" class="btn btn-primary">
+
+                                Explore Projects
+
+                            </a>
+
+                            <a href="#contact" class="btn btn-secondary">
+
+                                Contact Me
+
+                            </a>
+
+                        </div>
+
+                        <div class="hero-social">
+
+                            <a href="#" aria-label="GitHub">
+
+                                <i data-lucide="github"></i>
+
+                            </a>
+
+                            <a href="#" aria-label="LinkedIn">
+
+                                <i data-lucide="linkedin"></i>
+
+                            </a>
+
+                            <a href="#" aria-label="TikTok">
+
+                                <i data-lucide="music-2"></i>
+
+                            </a>
+
+                            <a href="mailto:your@email.com"
+                               aria-label="Email">
+
+                                <i data-lucide="mail"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ==========================================
+                         HERO IMAGE
+                    =========================================== -->
+
+                    <div class="hero-image">
+
+                        <div class="hud-frame">
+
+                            <div class="hud-ring ring-one"></div>
+
+                            <div class="hud-ring ring-two"></div>
+
+                            <div class="hud-ring ring-three"></div>
+
+                            <div class="scanner-line"></div>
+
+                            <img
+                                src="assets/images/profile.png"
+                                alt="Portrait of Ejeh David Eniola">
+
+                            <div class="status-panel">
+
+                                <span>
+
+                                    STATUS
+
+                                </span>
+
+                                <strong>
+
+                                    ONLINE
+
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ==========================================
+                     SCROLL INDICATOR
+                =========================================== -->
+
+                <div class="scroll-indicator">
+
+                    <span>Scroll</span>
+
+                    <i data-lucide="chevrons-down"></i>
+
+                </div>
+
+            </section>  
+          <!-- =======================================================
+             ABOUT SECTION
+        ======================================================== -->
+
+        <section id="about" class="about">
+
+            <div class="container">
+
+                <!-- ==========================
+                     SECTION HEADER
+                =========================== -->
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        About Me
+
+                    </span>
+
+                    <h2>
+
+                        The Person Behind The Screen
+
+                    </h2>
+
+                    <p>
+
+                        Every secure system begins with curiosity. Mine began
+                        with a passion for understanding technology and a desire
+                        to protect it.
+
+                    </p>
+
+                </div>
+
+                <div class="about-grid">
+
+                    <!-- ==========================
+                         PROFILE IMAGE
+                    =========================== -->
+
+                    <div class="about-image">
+
+                        <div class="image-frame">
+
+                            <img
+                                src="assets/images/profile.png"
+                                alt="Ejeh David Eniola">
+
+                        </div>
+
+                    </div>
+
+                    <!-- ==========================
+                         ABOUT CONTENT
+                    =========================== -->
+
+                    <div class="about-content">
+
+                        <h3>
+
+                            Hello, I'm Ejeh David Eniola.
+
+                        </h3>
+
+                        <p>
+
+                            I am a Cyber Security student with an enthusiastic
+                            attitude toward learning. I enjoy discovering how
+                            technology works, solving challenging problems, and
+                            continuously improving my technical skills.
+
+                        </p>
+
+                        <p>
+
+                            I believe that learning never truly ends. Every new
+                            technology, every vulnerability, and every project
+                            is another opportunity to grow both personally and
+                            professionally.
+
+                        </p>
+
+                        <blockquote>
+
+                            "Learning. Adapting. Securing."
+
+                        </blockquote>
+
+                        <!-- ==========================
+                             INFORMATION CARDS
+                        =========================== -->
+
+                        <div class="about-cards">
+
+                            <div class="about-card">
+
+                                <i data-lucide="shield-check"></i>
+
+                                <h4>
+
+                                    Cyber Security
+
+                                </h4>
+
+                                <p>
+
+                                    Building knowledge in security,
+                                    networking and ethical hacking.
+
+                                </p>
+
+                            </div>
+
+                            <div class="about-card">
+
+                                <i data-lucide="brain"></i>
+
+                                <h4>
+
+                                    Knowledge Sponge
+
+                                </h4>
+
+                                <p>
+
+                                    Passionate about learning something
+                                    new every single day.
+
+                                </p>
+
+                            </div>
+
+                            <div class="about-card">
+
+                                <i data-lucide="code-2"></i>
+
+                                <h4>
+
+                                    Web Development
+
+                                </h4>
+
+                                <p>
+
+                                    Creating modern, responsive and
+                                    interactive web experiences.
+
+                                </p>
+
+                            </div>
+
+                            <div class="about-card">
+
+                                <i data-lucide="target"></i>
+
+                                <h4>
+
+                                    Career Goal
+
+                                </h4>
+
+                                <p>
+
+                                    Becoming a world-class Cyber Security
+                                    Professional.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+                          <!-- =======================================================
+             SKILLS SECTION
+        ======================================================== -->
+
+        <section id="skills" class="skills">
+
+            <div class="container">
+
+                <!-- ==========================
+                     SECTION HEADER
+                =========================== -->
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Skills
+
+                    </span>
+
+                    <h2>
+
+                        Cyber Arsenal
+
+                    </h2>
+
+                    <p>
+
+                        Every skill is another tool in my cybersecurity arsenal.
+                        I'm continuously learning, practicing, and improving to
+                        become a well-rounded security professional.
+
+                    </p>
+
+                </div>
+
+                <!-- ==========================
+                     SKILLS GRID
+                =========================== -->
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+
+                        <i data-lucide="shield"></i>
+
+                        <h3>Cyber Security</h3>
+
+                        <p>Learning security fundamentals, risk management,
+                        vulnerability assessment, and defensive practices.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="75"></div>
+
+                            </div>
+
+                            <span>75%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card">
+
+                        <i data-lucide="network"></i>
+
+                        <h3>Networking</h3>
+
+                        <p>Understanding computer networks, protocols,
+                        routing, switching and secure communication.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="70"></div>
+
+                            </div>
+
+                            <span>70%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card">
+
+                        <i data-lucide="code-2"></i>
+
+                        <h3>HTML5</h3>
+
+                        <p>Building semantic, accessible and
+                        responsive web pages.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="90"></div>
+
+                            </div>
+
+                            <span>90%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card">
+
+                        <i data-lucide="palette"></i>
+
+                        <h3>CSS3</h3>
+
+                        <p>Creating responsive layouts,
+                        animations and modern UI designs.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="85"></div>
+
+                            </div>
+
+                            <span>85%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card">
+
+                        <i data-lucide="file-code"></i>
+
+                        <h3>JavaScript</h3>
+
+                        <p>Building interactive interfaces and
+                        dynamic web applications.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="65"></div>
+
+                            </div>
+
+                            <span>65%</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="skill-card">
+
+                        <i data-lucide="terminal"></i>
+
+                        <h3>Linux</h3>
+
+                        <p>Developing Linux command-line skills
+                        for cybersecurity and administration.</p>
+
+                        <div class="skill-level">
+
+                            <div class="skill-bar">
+
+                                <div class="skill-fill"
+                                     data-width="60"></div>
+
+                            </div>
+
+                            <span>60%</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+            <!-- =======================================================
+             CYBER LAB / SECURITY TERMINAL
+        ======================================================== -->
+
+        <section id="terminal" class="terminal-section">
+
+            <div class="container">
+
+                <!-- ==========================
+                     SECTION HEADER
+                =========================== -->
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Cyber Lab
+
+                    </span>
+
+                    <h2>
+
+                        Security Terminal
+
+                    </h2>
+
+                    <p>
+
+                        Welcome to my interactive terminal. Explore my portfolio
+                        by typing commands below. Curious visitors may even
+                        discover a few hidden secrets.
+
+                    </p>
+
+                </div>
+
+                <!-- ==========================
+                     TERMINAL WINDOW
+                =========================== -->
+
+                <div class="terminal-window">
+
+                    <div class="terminal-header">
+
+                        <div class="terminal-buttons">
+
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+
+                        </div>
+
+                        <span class="terminal-title">
+
+                            secure-terminal@cyberfolio
+
+                        </span>
+
+                    </div>
+
+                    <div id="terminal-output" class="terminal-output">
+
+<pre>
+======================================================
+ CyberFolio Security Terminal v4.0
+
+ Type "help" to begin.
+
+======================================================
+</pre>
+
+                    </div>
+
+                    <div class="terminal-input-area">
+
+                        <span class="prompt">
+
+                            C:\CyberFolio>
+
+                        </span>
+
+                        <input
+                            type="text"
+                            id="terminal-input"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Type a command...">
+
+                    </div>
+
+                </div>
+
+                <!-- ==========================
+                     QUICK COMMANDS
+                =========================== -->
+
+                <div class="terminal-shortcuts">
+
+                    <button class="command-btn"
+                            data-command="help">
+
+                        help
+
+                    </button>
+
+                    <button class="command-btn"
+                            data-command="about">
+
+                        about
+
+                    </button>
+
+                    <button class="command-btn"
+                            data-command="skills">
+
+                        skills
+
+                    </button>
+
+                    <button class="command-btn"
+                            data-command="projects">
+
+                        projects
+
+                    </button>
+
+                    <button class="command-btn"
+                            data-command="contact">
+
+                        contact
+
+                    </button>
+
+                    <button class="command-btn"
+                            data-command="clear">
+
+                        clear
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+           <!-- =======================================================
+             PROJECTS SECTION
+        ======================================================== -->
+
+        <section id="projects" class="projects">
+
+            <div class="container">
+
+                <!-- ==========================
+                     SECTION HEADER
+                =========================== -->
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Featured Projects
+
+                    </span>
+
+                    <h2>
+
+                        Mission Archive
+
+                    </h2>
+
+                    <p>
+
+                        Every project represents another completed mission,
+                        demonstrating my growth in cybersecurity, programming,
+                        networking and web development.
+
+                    </p>
+
+                </div>
+
+                <!-- ==========================
+                     FEATURED PROJECT
+                =========================== -->
+
+                <div class="featured-project">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/images/projects/cyberfolio.jpg"
+                            alt="CyberFolio Project">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="featured-badge">
+
+                            FEATURED PROJECT
+
+                        </span>
+
+                        <h3>
+
+                            CyberFolio: Shinobi Edition
+
+                        </h3>
+
+                        <p>
+
+                            A premium cybersecurity portfolio inspired by futuristic
+                            interfaces and subtle Shinobi aesthetics. Built from
+                            scratch using semantic HTML, modern CSS and Vanilla
+                            JavaScript with interactive animations, a security
+                            terminal and custom effects.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML5</span>
+
+                            <span>CSS3</span>
+
+                            <span>JavaScript</span>
+
+                            <span>Responsive Design</span>
+
+                            <span>Accessibility</span>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="#"
+                               class="btn btn-primary">
+
+                                Live Demo
+
+                            </a>
+
+                            <a href="#"
+                               class="btn btn-secondary">
+
+                                GitHub
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ==========================
+                     PROJECT GRID
+                =========================== -->
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <img
+                            src="assets/images/projects/project1.jpg"
+                            alt="Network Scanner">
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                Network Scanner
+
+                            </h3>
+
+                            <p>
+
+                                A beginner-friendly networking utility that
+                                discovers devices connected to a local network.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Python</span>
+
+                                <span>Networking</span>
+
+                            </div>
+
+                        </div>
+                        <div class="project-card fade-up">
+
+    <div class="project-image">
+
+        <img src="assets/images/projects/password-generator.webp"
+             alt="Secure Password Generator">
+
+    </div>
+
+    <div class="project-info">
+
+        <span class="project-tag">
+            JavaScript
+        </span>
+
+        <h3>
+            Secure Password Generator
+        </h3>
+
+        <p>
+
+            A cybersecurity-focused password generator that creates
+            highly secure passwords with customizable options.
+
+        </p>
+
+        <div class="project-tech">
+
+            <span>HTML</span>
+
+            <span>CSS</span>
+
+            <span>JavaScript</span>
+
+        </div>
+
+        <div class="project-links">
+
+            <a href="#" class="btn-primary">
+
+                Live Demo
+
+            </a>
+
+            <a href="#">
+
+                GitHub
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+                    </article>
+
+                    <article class="project-card">
+
+                        <img
+                            src="assets/images/projects/project2.jpg"
+                            alt="Password Generator">
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                Secure Password Generator
+
+                            </h3>
+
+                            <p>
+
+                                Generates strong random passwords following
+                                modern security recommendations.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>JavaScript</span>
+
+                                <span>Security</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="project-card">
+
+                        <img
+                            src="assets/images/projects/project3.jpg"
+                            alt="Coming Soon">
+
+                        <div class="project-info">
+
+                            <h3>
+
+                                Future Mission
+
+                            </h3>
+
+                            <p>
+
+                                Reserved for one of my upcoming cybersecurity
+                                or web development projects.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Coming Soon</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>     
+                <!-- =======================================================
+             EDUCATION & CERTIFICATIONS
+        ======================================================== -->
+
+        <section id="journey" class="journey">
+
+            <div class="container">
+
+                <!-- ==========================
+                     SECTION HEADER
+                =========================== -->
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+
+                        Journey
+
+                    </span>
+
+                    <h2>
+
+                        Learning Timeline
+
+                    </h2>
+
+                    <p>
+
+                        Every cybersecurity professional starts somewhere.
+                        This timeline represents my continuous journey of
+                        learning, building, and improving.
+
+                    </p>
+
+                </div>
+
+                <div class="security-status">
+
+    <span class="status-dot"></span>
+
+    Operational
+
+</div>
+
+                <div class="timeline">
+
+                    <!-- Timeline Item -->
+
+                    <article class="timeline-card">
+
+                        <div class="timeline-year">
+
+                            2026
+
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+
+                                Cyber Security Student
+
+                            </h3>
+
+                            <p>
+
+                                Began focusing on cybersecurity,
+                                networking, Linux, and secure web
+                                development while building practical
+                                projects.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Timeline Item -->
+
+                    <article class="timeline-card">
+
+                        <div class="timeline-year">
+
+                            Current
+
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+
+                                Building CyberFolio
+
+                            </h3>
+
+                            <p>
+
+                                Developing a production-ready portfolio
+                                while improving frontend development and
+                                cybersecurity skills.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Timeline Item -->
+
+                    <article class="timeline-card">
+
+                        <div class="timeline-year">
+
+                            Future
+
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+
+                                Security Professional
+
+                            </h3>
+
+                            <p>
+
+                                Working toward professional certifications,
+                                internships, and a career protecting digital
+                                systems.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ==========================
+                     CERTIFICATIONS
+                =========================== -->
+
+                <div class="certifications">
+
+                    <h3>
+
+                        Current Learning Path
+
+                    </h3>
+
+                    <div class="cert-grid">
+
+                        <div class="cert-card">
+
+                            <i data-lucide="shield-check"></i>
+
+                            <h4>
+
+                                Google Cybersecurity
+
+                            </h4>
+
+                            <span>
+
+                                Planned
+
+                            </span>
+
+                        </div>
+
+                        <div class="cert-card">
+
+                            <i data-lucide="network"></i>
+
+                            <h4>
+
+                                Cisco Networking Academy
+
+                            </h4>
+
+                            <span>
+
+                                In Progress
+
+                            </span>
+
+                        </div>
+
+                        <div class="cert-card">
+
+                            <i data-lucide="bug"></i>
+
+                            <h4>
+
+                                TryHackMe
+
+                            </h4>
+
+                            <span>
+
+                                Planned
+
+                            </span>
+
+                        </div>
+
+                        <div class="cert-card">
+
+                            <i data-lucide="terminal-square"></i>
+
+                            <h4>
+
+                                Linux Essentials
+
+                            </h4>
+
+                            <span>
+
+                                Planned
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==========================
+                     ACHIEVEMENTS
+                =========================== -->
+
+                <div class="achievements">
+
+                    <h3>
+
+                        Achievement Badges
+
+                    </h3>
+
+                    <div class="achievement-grid">
+
+                        <div class="achievement-card">
+
+                            🛡️
+
+                            <h4>
+
+                                Knowledge Sponge
+
+                            </h4>
+
+                        </div>
+
+                        <div class="achievement-card">
+
+                            💻
+
+                            <h4>
+
+                                Web Builder
+
+                            </h4>
+
+                        </div>
+
+                        <div class="achievement-card">
+
+                            🌐
+
+                            <h4>
+
+                                Network Explorer
+
+                            </h4>
+
+                        </div>
+
+                        <div class="achievement-card">
+
+                            ⚡
+
+                            <h4>
+
+                                Future Cyber Ninja
+
+                            </h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =======================================================
+             CONTACT SECTION
+        ======================================================== -->
+
+        <section id="contact" class="contact">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Contact
+                    </span>
+
+                    <h2>
+                        Let's Connect
+                    </h2>
+
+                    <p>
+                        Interested in working together, collaborating,
+                        or simply saying hello? I'd love to hear from you.
+                    </p>
+
+                </div>
+
+                <div class="contact-container">
+
+                    <!-- Contact Information -->
+
+                    <div class="contact-info">
+
+                        <h3>Contact Information</h3>
+
+                        <div class="contact-item">
+
+                            <i data-lucide="phone"></i>
+
+                            <span>07044373775</span>
+
+                        </div>
+
+                        <div class="contact-item">
+
+                            <i data-lucide="map-pin"></i>
+
+                            <span>Nigeria</span>
+
+                        </div>
+
+                        <div class="contact-item">
+
+                            <i data-lucide="music-2"></i>
+
+                            <span>@emerald_uzumaki</span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+
+                    <form id="contact-form">
+
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            required>
+
+                        <input
+                            type="email"
+                            placeholder="Your Email"
+                            required>
+
+                        <textarea
+                            rows="6"
+                            placeholder="Your Message"
+                            required></textarea>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Secure Transmission
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =======================================================
+             FOOTER
+        ======================================================== -->
+
+        <footer>
+
+            <div class="container">
+
+                <h3>
+
+                    Ejeh David Eniola
+
+                </h3>
+
+                <p>
+
+                    Cyber Security Student
+
+                </p>
+
+                <p>
+
+                    Learning. Adapting. Securing.
+
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#">
+                        <i data-lucide="github"></i>
+                    </a>
+
+                    <a href="#">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+                    <a href="#">
+                        <i data-lucide="mail"></i>
+                    </a>
+
+                </div>
+
+                <p class="copyright">
+
+                    © 2026 Ejeh David Eniola.
+                    All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </footer>
+            <!-- =======================================================
+         SUMMONING JUTSU MODAL
+    ======================================================== -->
+
+    <div id="summon-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="close-modal">
+
+                ✕
+
+            </button>
+
+            <div class="summoning-circle"></div>
+
+            <video
+                id="intro-video"
+                controls>
+
+                <source
+                    src="assets/video/portfolio-introduction.mp4"
+                    type="video/mp4">
+
+                Your browser does not support video playback.
+
+            </video>
+
+        </div>
+
+    </div>
+        <!-- =======================================================
+         ACHIEVEMENT POPUP
+    ======================================================== -->
+
+    <div id="achievement-popup">
+
+        <h3>
+
+            Achievement Unlocked!
+
+        </h3>
+
+        <p id="achievement-text">
+
+            Hidden Achievement
+
+        </p>
+
+    </div>
+    </body>
+</html>
