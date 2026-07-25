@@ -366,3 +366,60 @@
     height:440px;
 
 }
+/*=========================================================
+    SCANNER
+=========================================================*/
+
+.scanner-line{
+
+    position:absolute;
+
+    width:320px;
+
+    height:3px;
+
+    background:var(--primary);
+
+    box-shadow:0 0 20px var(--primary);
+
+}
+
+.status-panel{
+
+    position:absolute;
+
+    bottom:-35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    padding:15px 30px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:15px;
+
+    border:1px solid var(--border);
+
+    text-align:center;
+
+}
+
+.status-panel span{
+
+    display:block;
+
+    font-size:.75rem;
+
+    color:var(--gray);
+
+}
+
+.status-panel strong{
+
+    color:#4ADE80;
+
+}
