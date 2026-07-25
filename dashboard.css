@@ -1,0 +1,59 @@
+/*=========================================================
+    SOC DASHBOARD
+=========================================================*/
+
+.soc-dashboard{
+
+    margin-top:50px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:25px;
+
+}
+
+.dashboard-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+    font-weight:600;
+
+}
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.dashboard-item{
+
+    text-align:center;
+
+}
+
+.dashboard-item h3{
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+}
