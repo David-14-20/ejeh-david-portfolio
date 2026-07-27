@@ -1,0 +1,194 @@
+/*=========================================================
+    LIGHT MODE
+=========================================================*/
+
+body.light-mode{
+
+    --bg-primary:#f5f7fb;
+
+    --bg-secondary:#ffffff;
+
+    --bg-card:rgba(0,0,0,.04);
+
+    --white:#101828;
+
+    --gray:#475467;
+
+    --border:rgba(0,0,0,.12);
+
+    background:var(--bg-primary);
+
+    color:var(--white);
+
+}
+
+body.light-mode .terminal-window{
+
+    background:#ffffff;
+
+    color:#101828;
+
+}
+
+body.light-mode .terminal-header{
+
+    background:#e9eef5;
+
+}
+/*=========================================================
+    SHARINGAN MODE
+=========================================================*/
+
+body.sharingan-mode{
+
+    --primary:#ff2d55;
+
+    --purple:#8b0000;
+
+}
+
+body.sharingan-mode{
+
+    animation:sharinganPulse 2s infinite;
+
+}
+
+@keyframes sharinganPulse{
+
+    0%{
+
+        filter:hue-rotate(0deg);
+
+    }
+
+    50%{
+
+        filter:brightness(1.15);
+
+    }
+
+    100%{
+
+        filter:hue-rotate(0deg);
+
+    }
+
+}
+/*=========================================================
+    BANKAI MODE
+=========================================================*/
+
+body.bankai-mode{
+
+    --primary:#b620ff;
+
+    --purple:#5d00ff;
+
+}
+
+body.bankai-mode{
+
+    animation:bankaiGlow 3s infinite;
+
+}
+
+@keyframes bankaiGlow{
+
+    0%{
+
+        filter:brightness(1);
+
+    }
+
+    50%{
+
+        filter:brightness(1.2);
+
+    }
+
+    100%{
+
+        filter:brightness(1);
+
+    }
+
+}
+/*=========================================================
+    SAGE MODE
+=========================================================*/
+
+body.sage-mode{
+
+    --primary:#4ade80;
+
+}
+
+body.sage-mode .btn-primary{
+
+    box-shadow:0 0 25px #4ade80;
+
+}
+
+body.sage-mode .hud-ring{
+
+    border-color:#4ade80;
+
+}
+
+body.sage-mode .scanner-line{
+
+    background:#4ade80;
+
+}
+/*=========================================================
+    CHAKRA GLOW
+=========================================================*/
+
+.chakra-glow{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+    background:
+        radial-gradient(circle at 20% 20%,
+        rgba(0,207,255,.15),
+        transparent 40%),
+
+        radial-gradient(circle at 80% 60%,
+        rgba(123,44,191,.15),
+        transparent 40%),
+
+        radial-gradient(circle at 50% 90%,
+        rgba(74,222,128,.10),
+        transparent 40%);
+
+    animation:chakraMove 15s linear infinite;
+
+}
+
+@keyframes chakraMove{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-30px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
